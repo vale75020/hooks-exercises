@@ -14,7 +14,7 @@ const CounterOne = () => {
     }, [count]) // to update only count
 
    const bigImg = () => {
-        setStyle({width:"auto", margin:"0 auto"})
+        setStyle({width:"100%", margin:"0 auto"})
     }
 
     const littleImg = () => {

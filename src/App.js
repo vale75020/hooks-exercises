@@ -6,6 +6,8 @@ import CounterThree from './components/CounterThree';
 import CounterFour from './components/CounterFour';
 // import HookMouse from './components/HookMouse';
 import MouseContainer from './components/MouseContainer';
+import IntervalClassCounter from './components/IntervalClassCounter';
+import IntervalCount from './components/IntervalCount';
 import './App.css';
 
 const App = () => {
@@ -15,6 +17,12 @@ const App = () => {
   
   return (
     <div className="App">
+      <div className="container">
+        <IntervalClassCounter />
+      </div>
+      <div className="container">
+        <IntervalCount />
+      </div>
       <div className="container">
         <DarkButton />
       </div>
