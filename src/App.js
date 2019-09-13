@@ -1,19 +1,30 @@
 import React, { useState } from 'react';
+import DarkButton from './components/DarkButton';
 import CounterOne from './components/CounterOne';
 import CounterTwo from './components/CounterTwo';
 import CounterThree from './components/CounterThree';
 import CounterFour from './components/CounterFour';
+// import HookMouse from './components/HookMouse';
+import MouseContainer from './components/MouseContainer';
 import './App.css';
 
 const App = () => {
   const [count, setCount] = useState(10);
   const[email, setEmail] = useState("");
   const[password, setPassword] = useState("");
-
+  
   return (
     <div className="App">
       <div className="container">
-      <br />
+        <DarkButton />
+      </div>
+      <div className="container">
+      {/* <HookMouse /> */}
+      <MouseContainer />
+      </div>
+      <br /><br />
+      <div className="container">
+      <br /><br />
       <button onClick={() => setCount(count + 1)}> + 1 </button>
       <button onClick={() => setCount(currentCount => currentCount - 1)}> - 1 </button>
       <br /><br />
